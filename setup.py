@@ -5,7 +5,7 @@
 
 from setuptools import find_packages, setup
 
-with open("README.md") as readme_file:
+with open("readme.md") as readme_file:
     readme = readme_file.read()
 
 test_requirements = [
@@ -13,11 +13,11 @@ test_requirements = [
     "pytest",
     "pytest-cov",
     "pytest-raises",
+    "flake8",
+    "black",
 ]
 
-setup_requirements = [
-    "pytest-runner",
-]
+setup_requirements = ["pytest-runner"]
 
 dev_requirements = [
     "bumpversion>=0.5.3",
@@ -35,18 +35,13 @@ dev_requirements = [
     "wheel>=0.33.1",
 ]
 
-requirements = []
+requirements = ["cloudpickle"]
 
 extra_requirements = {
     "test": test_requirements,
     "setup": setup_requirements,
     "dev": dev_requirements,
-    "all": [
-        *requirements,
-        *test_requirements,
-        *setup_requirements,
-        *dev_requirements,
-    ]
+    "all": [*requirements, *test_requirements, *setup_requirements, *dev_requirements],
 }
 
 setup(
@@ -60,11 +55,6 @@ setup(
         "Programming Language :: Python :: 3.7",
     ],
     description="Mange runs of stochastic simulations",
-    entry_points={
-        "console_scripts": [
-            "my_example=runman.bin.my_example:main"
-        ],
-    },
     install_requires=requirements,
     license="Allen Institute Software License",
     long_description=readme,

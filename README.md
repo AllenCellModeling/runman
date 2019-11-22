@@ -3,7 +3,7 @@
 [![Build Status](https://github.com/AllenCellModeling/runman/workflows/Build%20Master/badge.svg)](https://github.com/AllenCellModeling/runman/actions)
 [![Documentation](https://github.com/AllenCellModeling/runman/workflows/Documentation/badge.svg)](https://AllenCellModeling.github.io/runman)
 
-Mange runs of stochastic simulations
+Mange runs (mostly of stochastic simulations)
 
 ---
 
