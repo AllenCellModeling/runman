@@ -50,7 +50,7 @@ setup(
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Intended Audience :: Developers",
-        "License :: Allen Institute Software License",
+        "License :: Free for non-commercial use",
         "Natural Language :: English",
         "Programming Language :: Python :: 3.7",
     ],
