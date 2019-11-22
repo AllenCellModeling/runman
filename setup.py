@@ -5,7 +5,7 @@
 
 from setuptools import find_packages, setup
 
-with open("readme.md") as readme_file:
+with open("README.md") as readme_file:
     readme = readme_file.read()
 
 test_requirements = [
