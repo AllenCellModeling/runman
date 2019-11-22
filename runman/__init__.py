@@ -7,4 +7,4 @@ __email__ = "cdavew@alleninstitute.org"
 # Do not edit this string manually, always use bumpversion
 __version__ = "0.1.0"
 
-from .runman import Run
+from .runman import Run  # noqa: F401

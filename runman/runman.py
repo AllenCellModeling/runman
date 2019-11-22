@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import pickle
+import cloudpickle as pickle
 
 
 class Run:
@@ -86,6 +86,11 @@ class Run:
         # create dict to serialize
         if what is None:
             what = self.serializewhat
+        if type(what) is str:
+            what = [
+                what,
+            ]
+        assert all([k in ("log", "assets", "timestep", "run") for k in what])
         ser = {
             k: v
             for k, v in (
@@ -94,7 +99,7 @@ class Run:
                 ("timestep", self.timestep),
                 ("run", self),
             )
-            if k in self.serializewhat
+            if k in what
         }
         # dump to file
         with open(fn, "wb") as file:
