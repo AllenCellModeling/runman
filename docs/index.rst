@@ -1,5 +1,5 @@
 Welcome to Run Manager's documentation!
-======================================
+=======================================
 
 .. toctree::
    :hidden:
