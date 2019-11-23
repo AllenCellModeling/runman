@@ -5,6 +5,6 @@
 __author__ = "David Williams"
 __email__ = "cdavew@alleninstitute.org"
 # Do not edit this string manually, always use bumpversion
-__version__ = "0.2.0"
+__version__ = "0.2.1"
 
 from .runman import Run  # noqa: F401

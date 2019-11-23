@@ -70,6 +70,6 @@ setup(
     extras_require=extra_requirements,
     url="https://github.com/AllenCellModeling/runman",
     # Do not edit this string manually, always use bumpversion
-    version="0.2.0",
+    version="0.2.1",
     zip_safe=False,
 )
