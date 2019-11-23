@@ -63,7 +63,7 @@ setup(
     keywords="runman",
     name="runman",
     packages=find_packages(),
-    python_requires=">=3.6",
+    python_requires=">=3.7",
     setup_requires=setup_requirements,
     test_suite="runman/tests",
     tests_require=test_requirements,
